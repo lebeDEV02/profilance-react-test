@@ -28,3 +28,46 @@
 		border: none;
 	}
 }
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	margin: 25px 50px;
+	label {
+		display: flex;
+		flex-direction: column;
+		width: 250px;
+		margin-bottom: 25px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	&__input {
+		margin-top: 5px;
+		padding: 0 5px;
+	}
+	&__submit {
+		background-color: $button-background;
+		border: none;
+		color: $button-text-color;
+		padding: 10px 60px;
+		border-radius: 10px;
+		cursor: pointer;
+		margin: 15px 0 25px;
+		transition: all 0.3s;
+		&:disabled {
+			opacity: 0.3;
+			&:hover {
+				opacity: 0.3;
+			}
+		}
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	&__error {
+		color: red;
+		max-width: 250px;
+	}
+}
+.logout {
+	margin: 25px 50px;
+}

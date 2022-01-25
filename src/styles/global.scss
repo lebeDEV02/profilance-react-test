@@ -1,4 +1,5 @@
 @import './normalize.scss';
+@import './variables/colors';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
 html {
 	box-sizing: border-box;
@@ -7,4 +8,12 @@ html {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+.button {
+	background-color: transparent;
+	border: none;
+	padding: 10px 50px;
+	background-color: $button-background;
+	color: $button-text-color;
+	border-radius: 10px;
 }

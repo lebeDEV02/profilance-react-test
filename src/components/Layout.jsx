@@ -4,11 +4,13 @@ import logo from '../images/logo.svg';
 import AuthButton from './AuthButton';
 import '../styles/global.scss';
 import '../styles/header.scss';
+import { useSelector } from 'react-redux';
 const classNames = require('classnames/bind');
 
 const setActive = ({ isActive }) =>
 	isActive ? classNames('header__link', 'header__link_active') : 'header__link';
 export default function Layout() {
+	const user = useSelector((state) => state.user.user);
 	return (
 		<>
 			<header className="header">
@@ -23,7 +25,7 @@ export default function Layout() {
 							<NavLink to="/news" className={setActive}>
 								Новости
 							</NavLink>
-							<AuthButton classNames="header__button"></AuthButton>
+							<AuthButton className="header__button"></AuthButton>
 						</nav>
 					</div>
 				</div>

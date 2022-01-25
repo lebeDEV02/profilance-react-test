@@ -1,0 +1,21 @@
+@import './variables/colors.scss';
+.news {
+	margin: 50px 0;
+}
+.news-list {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 0;
+}
+.new-item {
+	list-style: none;
+}
+
+@media (max-width: 1200px) {
+	.news-list {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0 20px;
+	}
+}

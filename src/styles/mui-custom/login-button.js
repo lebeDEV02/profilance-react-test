@@ -1,5 +1,6 @@
 export const authStyles = {
 	border: 'none',
+	background: 'transparent',
 	backgroundColor: 'black',
 	color: 'white',
 	'&:hover': { backgroundColor: 'rgba(0,0,0,0.8)' },
